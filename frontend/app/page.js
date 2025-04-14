@@ -33,8 +33,8 @@ export default function DiarioDeBordo() {
       </section>
 
       {/* Seção de Registros */}
-      <section className={styles.mesaRegistros}>
-        <h3>Mesa Registros</h3>
+      <section className={styles.meusRegistros}>
+        <h3>Meus Registros</h3>
         
         <article className={styles.registro}>
           <h4>Primeiro dia no mar</h4>

@@ -1,28 +1,64 @@
-/* frontend/app/page.module.css */
+/* app/page.module.css */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .novoRegistro {
-    background: #f5f5f5;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 30px;
-  }
-  
-  .novoRegistro form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .mesaRegistros article {
-    background: white;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.tituloPrincipal {
+  text-align: center;
+  color: #1a365d;
+  margin-bottom: 2rem;
+}
+
+.novoRegistro {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.input, .textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+}
+
+.textarea {
+  min-height: 100px;
+}
+
+.botao {
+  background: #4299e1;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.mesaRegistros {
+  margin-top: 2rem;
+}
+
+.registro {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.dataRegistro {
+  display: block;
+  text-align: right;
+  color: #718096;
+  font-size: 0.875rem;
+}

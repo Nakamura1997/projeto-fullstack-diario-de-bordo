@@ -124,3 +124,30 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Apps instalados
+INSTALLED_APPS = [
+    ...  # apps padrão do Django
+    'rest_framework',
+    'corsheaders',
+    'diario',  # Nosso app que vamos criar
+]
+
+# Middleware
+MIDDLEWARE = [
+    ...
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
+]
+
+# Configurações do CORS
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # Assumindo que seu frontend roda aqui
+]
+
+# Configurações do REST Framework
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ]
+}

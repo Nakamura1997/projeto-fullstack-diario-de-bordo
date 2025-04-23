@@ -74,8 +74,12 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'fulistack_db',       # Nome do banco de dados
+        'USER': 'postgres',           # Seu usuário PostgreSQL
+        'PASSWORD': 'sua_senha',      # Sua senha PostgreSQL
+        'HOST': 'localhost',          # Ou outro host se necessário
+        'PORT': '5432',               # Porta padrão do PostgreSQL
     }
 }
 
